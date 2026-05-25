@@ -1,1 +1,411 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header{
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1{
+            font-size: 24px;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover{
+            color: #c8e6c9;
+        }
+
+        .banner{
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .banner-content h2{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .banner-content p{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn{
+            background-color: #66bb6a;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            background-color: #388e3c;
+        }
+
+        section{
+            padding: 60px 10%;
+        }
+
+        section h2{
+            font-size: 35px;
+            color: #2e7d32;
+            margin-bottom: 20px;
+        }
+
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card{
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+        }
+
+        .card h3{
+            margin-bottom: 15px;
+            color: #2e7d32;
+        }
+
+        .sustentabilidade{
+            background-color: #e8f5e9;
+        }
+
+        .desafios{
+            background-color: #fff3e0;
+        }
+
+        .futuro{
+            background-color: #e3f2fd;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        input, textarea{
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button{
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background-color: #1b5e20;
+        }
+
+        footer{
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px){
+
+            nav{
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-content h2{
+                font-size: 35px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>🌱 Agro Sustentável</h1>
+
+            <ul>
+                <li><a href="#producao">Produção</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#desafios">Desafios</a></li>
+                <li><a href="#futuro">Futuro</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+
+        <div class="banner-content">
+            <h2>Agro forte, futuro sustentável</h2>
+
+            <p>
+                Equilíbrio entre produção agrícola e preservação ambiental.
+            </p>
+
+            <a href="#producao" class="btn">Saiba Mais</a>
+        </div>
+
+    </section>
+
+    <section id="producao">
+
+        <h2>🌾 Produção Agrícola</h2>
+
+        <p>
+            O agronegócio possui grande importância para a economia,
+            gerando empregos, exportações e desenvolvimento tecnológico.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Agricultura de Precisão</h3>
+                <p>
+                    Uso de GPS, sensores e softwares para aumentar
+                    a produtividade e evitar desperdícios.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Drones Agrícolas</h3>
+                <p>
+                    Monitoramento das plantações e identificação
+                    rápida de problemas no campo.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Irrigação Inteligente</h3>
+                <p>
+                    Sistemas automáticos que economizam água
+                    e melhoram a produção.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="sustentabilidade" id="sustentabilidade">
+
+        <h2>🌿 Sustentabilidade</h2>
+
+        <p>
+            A sustentabilidade busca produzir alimentos sem
+            comprometer os recursos naturais.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Conservação do Solo</h3>
+                <p>
+                    Técnicas que evitam erosão e preservam
+                    nutrientes importantes.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Energias Renováveis</h3>
+                <p>
+                    Uso de energia solar e biomassa
+                    nas propriedades rurais.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Economia de Água</h3>
+                <p>
+                    Métodos sustentáveis para reduzir
+                    desperdícios hídricos.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="desafios" id="desafios">
+
+        <h2>⚠️ Desafios Ambientais</h2>
+
+        <p>
+            O crescimento agrícola também pode causar impactos ambientais.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Desmatamento</h3>
+                <p>
+                    Expansão agrícola sem planejamento pode
+                    prejudicar florestas e biodiversidade.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Uso Excessivo da Água</h3>
+                <p>
+                    O desperdício pode afetar rios,
+                    lagos e reservas naturais.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Emissão de Carbono</h3>
+                <p>
+                    Máquinas e queimadas contribuem para
+                    o aumento do efeito estufa.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="futuro" id="futuro">
+
+        <h2>🚜 Soluções e Futuro</h2>
+
+        <p>
+            A tecnologia e a inovação são essenciais para
+            um futuro mais sustentável.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Agricultura Regenerativa</h3>
+                <p>
+                    Recuperação do solo e preservação ambiental.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Inteligência Artificial</h3>
+                <p>
+                    Sistemas inteligentes ajudam no controle
+                    da produção agrícola.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Produção Sustentável</h3>
+                <p>
+                    Crescimento econômico aliado à preservação
+                    da natureza.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contato">
+
+        <h2>📩 Contato e Conscientização</h2>
+
+        <p>
+            Cuidar do meio ambiente é garantir alimento e
+            qualidade de vida para as futuras gerações.
+        </p>
+
+        <form>
+
+            <input type="text" placeholder="Digite seu nome">
+
+            <input type="email" placeholder="Digite seu e-mail">
+
+            <textarea rows="5" placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 - Projeto Agro Forte, Futuro Sustentável
+        </p>
+
+    </footer>
+
+</body>
+              </html>
