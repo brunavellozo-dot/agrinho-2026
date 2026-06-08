@@ -1,0 +1,186 @@
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header{
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1{
+            font-size: 24px;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover{
+            color: #c8e6c9;
+        }
+
+        .banner{
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .banner-content h2{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .banner-content p{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn{
+            background-color: #66bb6a;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            background-color: #388e3c;
+        }
+
+        section{
+            padding: 60px 10%;
+        }
+
+        section h2{
+            font-size: 35px;
+            color: #2e7d32;
+            margin-bottom: 20px;
+        }
+
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card{
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+        }
+
+        .card h3{
+            margin-bottom: 15px;
+            color: #2e7d32;
+        }
+
+        .sustentabilidade{
+            background-color: #e8f5e9;
+        }
+
+        .desafios{
+            background-color: #fff3e0;
+        }
+
+        .futuro{
+            background-color: #e3f2fd;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        input, textarea{
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button{
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background-color: #1b5e20;
+        }
+
+        footer{
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px){
+
+            nav{
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-content h2{
+                font-size: 35px;
+            }
+
+        }
+
+    </style>
